@@ -31,14 +31,122 @@
         </ul>
     </nav>
     <main id="contenido"class="container">
-        <section class="card" id="texto">
-            <h2> 1) Texto y estructura</h2>
-            <article>
-                <h3>Encabezado</h3>
-                <p>Este es un parrafo con <strong>negrita</strong><em>Letras cursivas</em><mark>resaltas letras</mark><u> nosee</u></p>
-            </article>
-        </section>
+        
+      <h2>1) Texto y estructura</h2>
 
-    </main>
+      <article>
+        <h3>Encabezados</h3>
+        <p>Esto es un párrafo con <strong>strong</strong>, <em>em</em>, <mark>mark</mark>, <u>u</u> y <code>code</code>.</p>
+
+        <p>
+          Un enlace: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>.
+          Un <abbr title="HyperText Markup Language">HTML</abbr> bien usado es oro.
+        </p>
+
+        <blockquote cite="https://developer.mozilla.org/">
+          “La web se construye mejor cuando el HTML tiene significado.”
+        </blockquote>
+         <!-- para citar -->
+
+        <p>
+          Texto pequeño: <small>esto es una nota al pie mental.</small>
+        </p>
+
+        <p>
+          Superíndice y subíndice: H<sub>2</sub>O y 2<sup>10</sup>.
+        </p>
+
+        <hr />
+
+        <h3>Detalles expandibles</h3> 
+        <details>
+          <summary>Abre para ver un tip</summary>
+          <p>Usa etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>… tu yo del futuro te lo agradece.</p>
+        </details>
+
+        <h3>Preformateado</h3>         para organizar tiquetas...
+        <pre><code>function holaMundo() {
+  console.log("Hola, GitHub!");
+}</code></pre>
+      </article>
+    </section>
+
+
+<section class="car"> 
+    <h2>2)listas</h2>
+    <div class ="grid"> 
+        <div>
+            <h3>listas  no ordenadas</h3>
+            <ul>
+                <li> pan</li>
+                <li> cafe</li>
+                <li> cena</li>
+            </ul>
+     </div>
+ <div>
+    <h3>LISTAS ORDENADAS</h3>
+    <ol>
+        <li>clonar repo</li>
+        <li>clonar Editar</li>
+        <li>clonar Comentar</li>
+        <li>clonar push</li>
+    </ol>
+ </div>
+  
+ <div> 
+    <h3>listas de definiciones</h3>
+    <dl>
+        <dt>html</dt>
+        <dt>Estructuras</dt>
+        <dt>Estilo</dt>
+        <dt>JS</dt>
+    </dl>
+ </div>
+</section>
+<section class ="car" id="multimedia">
+    <h2>Multimedia</h2>
+    <figure>
+        <img src="https://andresbonillaescobar.wordpress.com/wp-content/uploads/2013/10/html4.jpg" alt="Imagen de ejemplo">
+    </figure>
+    <!-- Esta tiqueta es para las imagenes -->
+     <p>
+        <button type="button" class="btn">Boton</button>
+        <a href="#Formularios" class="btn ghost"> Ir  a los formularios</a>
+     </p>
+
+</section>
+<section class ="card" id="Tablas" >
+    <h2>4) Tablas</h2>
+    <table>
+        <caption>Tabla de ejemplos</caption>
+        <thead>
+            <tr>
+                <!-- (tr)para filas -->
+                <th scope="col" >comandos</th>
+                <th scope="col" >¿Que hace?</th>
+            </tr>
+            <!-- (th)para celdas encabezados -->
+        </thead>
+        <tbody>
+            <!-- tbody cuerpo -->
+            <tr>
+                <td>git status</td>
+                <td>Muestra cambios pendientes</td>
+
+            </tr>
+            <tr>
+                <td>git add .</td>
+                <td>agreaga cambios al "staging"</td>
+            </tr>
+             <tr>
+                <td>git push</td>
+                <td>sube al repo  "remoto"</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+</section>
+</main>
 </body>
 </html>
